@@ -1,0 +1,122 @@
+* {
+    padding : 0;
+    margin : 0;
+    user-select: none;
+    flex-shrink: 0;
+}
+html , body {
+    width : 100%;
+    height : 100%;
+}
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container {
+    width : 500px;
+    height : 600px;
+    background : #759486;
+    display: flex;
+    flex-direction: column;
+}
+
+.top , .main , .bottom {width : 100%}
+
+.top {
+    height : 50px;
+    direction: rtl;
+    outline : solid 1px;
+}
+.main {
+    height : auto;
+    flex-grow: 1;
+    outline: solid 1px;
+}
+.bottom {
+    height :  60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.top , .bottom {
+    display: flex;
+    align-items: center;
+}
+.profile , .name-infos {
+    height : 45px;
+    display: flex;
+    align-items: center;
+    outline: solid 1px;
+}
+
+.top .profile {
+    width : 45px;
+    height : 45px;
+    margin-right : 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.profile .profile-image {
+    width : 40px;
+    height : 40px;
+    background-color: teal;
+    border-radius: 4pc;
+}
+.top .name-infos {
+    flex-direction: column;
+    flex-grow: 1;
+    align-items: start;
+    text-indent: 7px;
+
+}
+.clicked {cursor : pointer}
+.clicked:active {scale : 0.95}
+.name-infos span:first-child {
+    height : 30px;
+    display: flex;
+    align-items: center;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    overflow-y: auto;
+}
+
+.text {
+    width : calc(100% - 30px);
+    min-height : calc(100% - 10px);
+    height : fit-content;
+    outline : solid 1px;
+    padding : 4px;
+}
+.text span {
+    flex-wrap: wrap;
+    word-wrap: break-word;
+}
+.bottom-container {
+    width : calc(100% - 10px);
+    height : calc(100% - 15px);
+    margin-inline: 7px ;
+    background : lightgreen;
+    display: flex;
+    align-items: center;
+}
+
+.bottom-container > span {
+    width : 31%;
+    height : calc(100% - 11px);
+    background : #102;
+    margin-inline: 5px;;
+    border-radius: 4pc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+span.share {background: #754861;}
+span.comment {background: #454545;}
+span.react {background: #753;}

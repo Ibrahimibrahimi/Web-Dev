@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+        <div class="output">
+            <p id="output"></p>
+        </div>
+        <div class="controls">
+            <button class="up" onclick="direction='up'">Up</button>
+            <div>
+                <button class="left" onclick="direction='left'">Left</button>
+                <button class="right" onclick="direction='right'">Right</button>
+            </div>
+            <button class="bottom" onclick="direction='down'">Bottom</button>
+        </div>
+    </div>
+    <span id="score">0</span>
+    <span id="food">x:0;y:0;</span>
+    <script src="index.js"></script>
+</body>
+</html>
